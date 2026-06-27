@@ -28,8 +28,12 @@ rm lista.txt.rej
 
 ### Krok 3: Nałożenie łatki aktualizacyjnej
 Po rozwiązaniu problemu z formatowaniem, łatka została pomyślnie nałożona na oryginalny plik tekstowy za pomocą operatora przekierowania.
+```bash
 patch lista.txt < aktualizacja.patch
+```
 
 ### Krok 4 Weryfikacja sum kontrolnych
 Aby potwierdzić, że zaktualizowany plik lista.txt jest w 100% identyczny z plikiem referencyjnym lista-pop.txt, obliczono i porównano ich sumy kontrolne MD5.
+```bash
 md5sum lista.txt lista-pop.txt
+```
