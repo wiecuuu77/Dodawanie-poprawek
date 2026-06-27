@@ -22,7 +22,7 @@ diff -u lista.txt lista-pop.txt > aktualizacja.patch.
 Podczas próby nałożenia łatki wystąpił błąd different line endings (Hunk FAILED). Wynikał on z różnic w kodowaniu znaków końca linii pomiędzy systemem Windows (CRLF) a standardem uniksowym (LF), którego wymagało narzędzie patch.
 Rozwiązanie:
 Z poziomu edytora VS Code ujednolicono formatowanie w obu plikach, zmieniając CRLF na LF. Następnie plik aktualizacja.patch wygenerowano ponownie, co wyeliminowało błędy kompatybilności. Alternatywnie, z poziomu terminala odrzucono nieudane zmiany
-``bash
+```bash
 rm lista.txt.rej
 ```
 
