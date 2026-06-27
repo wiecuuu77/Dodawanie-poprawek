@@ -15,7 +15,8 @@ Głównym celem zadania było porównanie dwóch wersji plików tekstowych (`lis
 Za pomocą polecenia `diff` porównano oryginalny plik z wersją poprawioną i wygenerowano plik różnicowy w formacie zunifikowanym (`-u`).
 
 ```bash
-diff -u lista.txt lista-pop.txt > aktualizacja.patch
+diff -u lista.txt lista-pop.txt > aktualizacja.patch.
+```
 
 ### Krok 2: Rozwiązanie problemu ze znakami końca linii (CRLF vs LF)
 Podczas próby nałożenia łatki wystąpił błąd different line endings (Hunk FAILED). Wynikał on z różnic w kodowaniu znaków końca linii pomiędzy systemem Windows (CRLF) a standardem uniksowym (LF), którego wymagało narzędzie patch.
